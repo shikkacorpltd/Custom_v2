@@ -20,6 +20,7 @@ import TestPage from "./pages/TestPage";
 import SupabaseConnectionTest from "./pages/SupabaseConnectionTest";
 import RealtimeTest from "./pages/RealtimeTest";
 import SupabaseTestSuite from "./pages/SupabaseTestSuite";
+import LoginDiagnostic from "./pages/LoginDiagnostic";
 
 // Create a query client with error handling
 const queryClient = new QueryClient({
@@ -62,6 +63,7 @@ const App = () => (
                 </React.Suspense>
               } />
               <Route path="/supabase-test-suite" element={<SupabaseTestSuite />} />
+              <Route path="/login-diagnostic" element={<LoginDiagnostic />} />
               
               <Route path="/" element={<Landing />} />
               <Route path="*" element={<NotFound />} />

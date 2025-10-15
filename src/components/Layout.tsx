@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSidebar";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import FeedbackSurvey from "@/components/FeedbackSurvey";
+import NotificationCenter from "@/components/NotificationCenter";
 import logo from "@/assets/logo.png";
 import { Menu } from "lucide-react";
 
@@ -39,6 +41,7 @@ export function Layout({ children, activeModule, setActiveModule }: LayoutProps)
               </h1>
             </div>
             <div className="ml-auto flex items-center gap-2">
+              <NotificationCenter />
               <ThemeToggle />
             </div>
           </header>
@@ -47,6 +50,8 @@ export function Layout({ children, activeModule, setActiveModule }: LayoutProps)
           </main>
         </SidebarInset>
       </div>
+      {/* Floating Feedback Button */}
+      <FeedbackSurvey />
     </SidebarProvider>
   );
 }

@@ -12,7 +12,8 @@ import {
   ClipboardList,
   LogOut,
   Award,
-  ArrowRightLeft
+  ArrowRightLeft,
+  MessageSquare
 } from "lucide-react";
 import {
   Sidebar,
@@ -83,6 +84,12 @@ export function AppSidebar({ activeModule, setActiveModule }: AppSidebarProps) {
           module: "users"
         },
         {
+          title: "Feedback",
+          url: "#",
+          icon: MessageSquare,
+          module: "feedback"
+        },
+        {
           title: "Analytics",
           url: "#",
           icon: BarChart3,
@@ -147,6 +154,12 @@ export function AppSidebar({ activeModule, setActiveModule }: AppSidebarProps) {
           url: "#",
           icon: BarChart3,
           module: "reports"
+        },
+        {
+          title: "Feedback",
+          url: "#",
+          icon: MessageSquare,
+          module: "feedback"
         }
       ];
     }
